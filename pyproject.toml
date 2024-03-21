@@ -1,0 +1,23 @@
+[project]
+name = "livraria"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Renato Chagas", email = "renatochagas.m@gmail.com"},
+]
+dependencies = [
+    "django>=5.0.3",
+]
+requires-python = "==3.10.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
+
+[tool.pdm.scripts]
+dev = "python manage.py runserver"
+createsuperuser = "python manage.py createsuperuser"
+migrate = "python manage.py migrate"
+makemigrations = "python manage.py makemigrations"
